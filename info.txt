@@ -1,0 +1,68 @@
+git init
+
+npm init -y
+
+-instalar typescript de manera local
+
+npm i -D typescript
+
+-npx tsc 
+-npx tsc --version
+npx tsc --init  //para dejar el proyecto pre configurado
+npm i ts-node -D   //dependencia de desarrollo
+
+/*crear el git ignore*/
+para ignorar "node_modules"
+-copiar la version de gitignore.io
+
+/*para manejar una configuracion global*/
+.editorconfig
+    /**/
+    <# Editor configuration, see https://editorconfig.org
+        root = true
+
+        [*]
+        charset = utf-8
+        indent_style = space
+        indent_size = 2
+        insert_final_newline = true
+        trim_trailing_whitespace = true
+
+        [*.ts]
+        quote_type = single
+
+        [*.md]
+        max_line_length = off
+        trim_trailing_whitespace = false>
+
+/*carpeta src para todo el codigo*/
+
+/*carpeta dist para la TRANSPILACION*/
+en el archivo tsconfig.json indicar que todo el transpilado vaya a la carpeta dist
+"outDir": "./dist",   
+
+/*clases en ts*/
+poo con clases en js
+
+
+/*para ejecutar el codigo*/
+npx ts-node src/01-class.ts
+
+/*en el archivo tsconfig.json*/
+hay que tener encuenta que para transpilar, la version de js que utilizo
+ "target": "es2016",   
+
+/*codigo para transpilar*/
+npx tsc
+/*Las methods por defecto son publico*/
+public
+
+readonly -- es interno como externo por lo tanto no se puede modificar
+
+private se pueden colocar a las propiedades y a los metodos
+
+
+
+/*con export al momento de crear clases puedo utilizar el mismo nombre en varios archivos*/
+
+
